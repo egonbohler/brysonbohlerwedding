@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>08.18.18 - Bryson Bohler Wedding</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Prata" rel="stylesheet">
+
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Bryson-Bohler</a>
+          <a class="js-scroll-trigger" href="#page-top"></br>Wedding</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#services">Wedding Details</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about">Wedding Party</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio">Engagement Photos</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#footer">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Footer -->
+    <section class="content-section bg-light text-dark text-center" id="footer" style = "height: 100%">
+      <div class="container" >
+        <div class="content-section-heading">
+          <h2 class="mb-5 heading-text" style="letter-spacing: 0.06em">RSVP</h2>
+          <p> Please RSVP for our wedding using the form below – we hope to see you there!</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2"></div>
+                <div class="col-lg-8 col-md-8">
+                    <form action="https://formspree.io/aliegonwedding@googlegroups.com" method="POST">
+                        <div class="row control-group">
+                            <div class="form-group col-lg-12 col-md-12 col-xs-12 floating-label-form-group controls">
+                                <div id = "nameSelector">
+                                	<script>
+                                		//Show/Hide Inputs Dynamically based on guest
+                                		function hideSelectors() {
+                                		  var selected = $('#guestName option:selected').text();
+                                		  var hasGuests = ['Abrar Samad','Addie Cox','Adrienne Buckley'];
+                                		  // console.log(hasGuests.includes(selected))
+                                		  if (hasGuests.includes(selected)) {
+                                		  	document.getElementById("guestSelectors").style.display = "block";
+                                		  	document.getElementById("plusOneMessage").style.display = "none";
+                                		  } else {
+                                		  	document.getElementById("guestSelectors").style.display = "none";
+                                		  	document.getElementById("plusOneMessage").style.display = "block";
+                                		  }
+                                		}
+                                	</script>
+                                	<label>Your Name</label>
+	                                <!-- <input type="email" class="form-control" placeholder="you@yourmail.com" id="email" name="_replyto" required data-validation-required-message="Please select your name from the list."> -->
+	                                <select id = "guestName" onChange ="hideSelectors()" class = "custom-select" required>
+	                                	<option value = 'Abrar Samad'>Abrar Samad</option>
+	                                	<option value = 'Addie Cox'>Addie Cox</option>
+	                                	<option value = 'Adrienne Buckley'>Adrienne Buckley</option>
+	                                	<option value = 'Ainsley Townsend'>Ainsley Townsend</option>
+	                                	<option value = 'Alex Reed'>Alex Reed</option>
+	                                	<option value = 'Allen Timan'>Allen Timan</option>
+	                                	<option value = 'Amy Dagilis'>Amy Dagilis</option>
+	                                	<option value = 'Andrew Poyar'>Andrew Poyar</option>
+	                                	<option value = 'Angel Taggert'>Angel Taggert</option>
+	                                	<option value = 'Anneliese Linnen'>Anneliese Linnen</option>
+	                                	<option value = 'Bethany Reckner'>Bethany Reckner</option>
+	                                	<option value = 'Bobby Zupke'>Bobby Zupke</option>
+	                                	<option value = 'Brad Powers'>Brad Powers</option>
+	                                	<option value = 'Bryan Cooper'>Bryan Cooper</option>
+	                                	<option value = 'Caleigh Pickett'>Caleigh Pickett</option>
+	                                	<option value = 'Canice Barnett'>Canice Barnett</option>
+	                                	<option value = 'Catie Lehman'>Catie Lehman</option>
+	                                	<option value = 'Chase Bryson'>Chase Bryson</option>
+	                                	<option value = 'Cheryl Rosario'>Cheryl Rosario</option>
+	                                	<option value = 'Cory Reckner'>Cory Reckner</option>
+	                                	<option value = 'Craig Bohler'>Craig Bohler</option>
+	                                	<option value = 'Curt Lauer'>Curt Lauer</option>
+	                                	<option value = 'Dave Lehman'>Dave Lehman</option>
+	                                	<option value = 'Dave Schneider'>Dave Schneider</option>
+	                                	<option value = 'David Wildasinn'>David Wildasinn</option>
+	                                	<option value = 'Debbie Gibbons'>Debbie Gibbons</option>
+	                                	<option value = 'Diane Bell'>Diane Bell</option>
+	                                	<option value = 'Dick Barnett'>Dick Barnett</option>
+	                                	<option value = 'Don Bell'>Don Bell</option>
+	                                	<option value = 'Doug Bryson'>Doug Bryson</option>
+	                                	<option value = 'Dr. Paula Qualls Mitchell'>Dr. Paula Qualls Mitchell</option>
+	                                	<option value = 'Ed Foster'>Ed Foster</option>
+	                                	<option value = 'Elliot Pickett'>Elliot Pickett</option>
+	                                	<option value = 'Erin Reffner'>Erin Reffner</option>
+	                                	<option value = 'Fran Segulin'>Fran Segulin</option>
+	                                	<option value = 'Gabby Trifiro'>Gabby Trifiro</option>
+	                                	<option value = 'Garren Bohler'>Garren Bohler</option>
+	                                	<option value = 'Geoff Maines'>Geoff Maines</option>
+	                                	<option value = 'Gillian Weiss'>Gillian Weiss</option>
+	                                	<option value = 'Ginger Xu'>Ginger Xu</option>
+	                                	<option value = 'Greg Hopkins'>Greg Hopkins</option>
+	                                	<option value = 'Griffin Dolan'>Griffin Dolan</option>
+	                                	<option value = 'Heather Meadows'>Heather Meadows</option>
+	                                	<option value = 'Heidi Radigan'>Heidi Radigan</option>
+	                                	<option value = 'Ida Trifiro'>Ida Trifiro</option>
+	                                	<option value = 'Jack Herrera'>Jack Herrera</option>
+	                                	<option value = 'Jack Stevning'>Jack Stevning</option>
+	                                	<option value = 'Jamie Bryson'>Jamie Bryson</option>
+	                                	<option value = 'Jeanette Powers'>Jeanette Powers</option>
+	                                	<option value = 'Jeanette Stanley'>Jeanette Stanley</option>
+	                                	<option value = 'Jim Gruneisen'>Jim Gruneisen</option>
+	                                	<option value = 'Jim Parsons'>Jim Parsons</option>
+	                                	<option value = 'Jimmy Powers'>Jimmy Powers</option>
+	                                	<option value = 'Joe Doll'>Joe Doll</option>
+	                                	<option value = 'Joey Crawford'>Joey Crawford</option>
+	                                	<option value = 'John Begusch'>John Begusch</option>
+	                                	<option value = 'Joseph Hrobat'>Joseph Hrobat</option>
+	                                	<option value = 'Judy Metzler'>Judy Metzler</option>
+	                                	<option value = 'Julie Diegelmann'>Julie Diegelmann</option>
+	                                	<option value = 'Julie Lehman'>Julie Lehman</option>
+	                                	<option value = 'Kathleen Bohler'>Kathleen Bohler</option>
+	                                	<option value = 'Kathy Timan'>Kathy Timan</option>
+	                                	<option value = 'Katie Leep '>Katie Leep </option>
+	                                	<option value = 'Kaye Bryson'>Kaye Bryson</option>
+	                                	<option value = 'Kirk Stanley'>Kirk Stanley</option>
+	                                	<option value = 'Laura Cordle'>Laura Cordle</option>
+	                                	<option value = 'Laura Niese'>Laura Niese</option>
+	                                	<option value = 'Lisa Fesmire'>Lisa Fesmire</option>
+	                                	<option value = 'Lori Reilly'>Lori Reilly</option>
+	                                	<option value = 'Lori Salyer'>Lori Salyer</option>
+	                                	<option value = 'Luci Trifiro'>Luci Trifiro</option>
+	                                	<option value = 'Lynne Forrester'>Lynne Forrester</option>
+	                                	<option value = 'Maggie Stoeva'>Maggie Stoeva</option>
+	                                	<option value = 'Marcus Townsend'>Marcus Townsend</option>
+	                                	<option value = 'Marian Bohler'>Marian Bohler</option>
+	                                	<option value = 'Marty Krol'>Marty Krol</option>
+	                                	<option value = 'Maryanne Phillips'>Maryanne Phillips</option>
+	                                	<option value = 'Matt Thornburg'>Matt Thornburg</option>
+	                                	<option value = 'Meg Modzelewski'>Meg Modzelewski</option>
+	                                	<option value = 'Megan Davis'>Megan Davis</option>
+	                                	<option value = 'Megan Svoboda '>Megan Svoboda </option>
+	                                	<option value = 'Mike Trifiro'>Mike Trifiro</option>
+	                                	<option value = 'Nick Crowley'>Nick Crowley</option>
+	                                	<option value = 'Nicky Espinosa'>Nicky Espinosa</option>
+	                                	<option value = 'Nicole Parente'>Nicole Parente</option>
+	                                	<option value = 'Pam Foster'>Pam Foster</option>
+	                                	<option value = 'Penny Pickett'>Penny Pickett</option>
+	                                	<option value = 'Peter Glover'>Peter Glover</option>
+	                                	<option value = 'Peter Larkin-Gero'>Peter Larkin-Gero</option>
+	                                	<option value = 'Randy Bohler'>Randy Bohler</option>
+	                                	<option value = 'Randy Salyer'>Randy Salyer</option>
+	                                	<option value = 'Raven Robbins'>Raven Robbins</option>
+	                                	<option value = 'Ray Radigan'>Ray Radigan</option>
+	                                	<option value = 'Rick Forrester'>Rick Forrester</option>
+	                                	<option value = 'Rick Mills'>Rick Mills</option>
+	                                	<option value = 'Ricky Pickett'>Ricky Pickett</option>
+	                                	<option value = 'Rob Nelson'>Rob Nelson</option>
+	                                	<option value = 'Ron Metzler'>Ron Metzler</option>
+	                                	<option value = 'Ron Stanley'>Ron Stanley</option>
+	                                	<option value = 'Sam Greenwald'>Sam Greenwald</option>
+	                                	<option value = 'Sandy Powers'>Sandy Powers</option>
+	                                	<option value = 'Sarah Braun'>Sarah Braun</option>
+	                                	<option value = 'Sarah Pickett'>Sarah Pickett</option>
+	                                	<option value = 'Scott Burgess'>Scott Burgess</option>
+	                                	<option value = 'Shayla Nilsen'>Shayla Nilsen</option>
+	                                	<option value = 'Stacey Salyer'>Stacey Salyer</option>
+	                                	<option value = 'Steph Botshon'>Steph Botshon</option>
+	                                	<option value = 'Stephanie Barnett'>Stephanie Barnett</option>
+	                                	<option value = 'Steven Farmer'>Steven Farmer</option>
+	                                	<option value = 'Sue Gruneisen'>Sue Gruneisen</option>
+	                                	<option value = 'Taylor Perry- Kotapish'>Taylor Perry- Kotapish</option>
+	                                	<option value = 'Terri Mills'>Terri Mills</option>
+	                                	<option value = 'Tom Pickett'>Tom Pickett</option>
+	                                	<option value = 'Tommy Lehman'>Tommy Lehman</option>
+	                                	<option value = 'Tyler Cunnington'>Tyler Cunnington</option>
+	                                	<option value = 'Tyler Pickett'>Tyler Pickett</option>
+	                                	<option value = 'Tyler Ranft'>Tyler Ranft</option>
+	                                	<option value = 'Umberto Trifiro'>Umberto Trifiro</option>
+	                                	<option value = 'Victor Trifiro'>Victor Trifiro</option>
+	                                	<option value = 'Wayne Segulin'>Wayne Segulin</option>
+	                                </select>
+	                                <p class="help-block text-danger"></p>
+                                </div>
+                                <div>
+                                	<label>Can you join us?</label>
+                                		<select id = "rsvp" class = "custom-select">
+                                			<option value = "Yes">Yes, looking forward to it!</option>
+                                			<option value = "No">Sorry, I won't be able to make it!</option>
+                                		</select>
+                                		<p class="help-block text-danger"></p>
+                                </div>
+                                <div id = "plusOneMessage" style = "display: block;">
+                                	<p><em> Unless otherwise noted, please refrain from inviting a plus one.</em></p>
+                                </div>
+                                <div id ="guestSelectors" style ="display: none;">
+                                	<div>
+                                		<label>Guests (Plus One)</label>
+                                		<select id ="plusOne" class = "custom-select">
+                                			<option value = '0'>0</option>
+                                			<option value = '1'>1</option>
+                                		</select>
+                                		<p class="help-block text-danger"></p>
+                                	</div>
+                                	<div>
+                                		<label>Children</label>
+                                		<select id = "kidsCount" class = "custom-select">
+                                			<option value = '0'>0</option>
+                                			<option value = '1'>1</option>
+                                			<option value = '2'>2</option>
+                                			<option value = '3'>3</option>
+                                			<option value = '4'>4</option>
+                                		</select>
+                                		<p class="help-block text-danger"></p>
+                                	</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-lg-12 col-md-12 col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <input type="text" class="form-control" placeholder="Type your message here..." id="name" name="name" data-validation-required-message="Please enter a message." style="min-height: 9em;">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <input type="hidden" name="_next" value="/"/>
+                        <input type = "hidden" id = "sendThis" name = "name" value = "">
+                        <br>
+                        <div class="row">
+                            <div class="form-group col-lg-12 col-md-12 col-xs-12">
+                            	<script>
+                            		function concatFields() {
+                            			var concatString = "Guest Name: " + $('#guestName option:selected').text() 
+                            							   + " | RSVP: " + $('#rsvp option:selected').text()
+                            							   + " | Plus one: " + $('#plusOne option:selected').text()
+                            							   + " | Kids: " + $('#plusOne option:selected').text()
+                            							   + " | Message: " + $('#name').val();
+                            				document.getElementById("sendThis").value = concatString;
+                            				console.log(document.getElementById("sendThis").value);
+
+                            		}
+                            	</script>
+                                <button type="submit" class="btn btn-primary btn-xl" value="Send" onClick = "concatFields()">Send</button>
+                            </div>
+                        </div>
+                </form>
+                </div>
+                <div class="col-lg-2 col-md-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+
+  </body>
+
+</html>
