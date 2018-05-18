@@ -51,10 +51,11 @@
     </nav>
 
     <!-- Footer -->
-    <section class="content-section bg-light text-dark text-center" id="footer" style = "height: 140%">
+    <section class="content-section bg-light text-dark text-center" id="footer" style = "background-color: #f8f9fa;">
       <div class="container">
         <div class="content-section-heading">
-          <h2 class="mb-5 heading-text" style="letter-spacing: 0.06em">RSVP</h2>
+          <h2 class="mb-5 heading-text" style="letter-spacing: 0.02em">08.18.18</h2>
+          <h6 class="mb-5 heading-text">The wedding of </br>Alysse Bryson & Egon Bohler</h6>
           <p> Please RSVP for our wedding using the form below – we hope to see you there!</p>
         </div>
         <div class="row">
@@ -68,7 +69,7 @@
                                 		//Show/Hide Inputs Dynamically based on guest
                                 		function hideSelectors() {
                                 		  var selected = $('#guestName option:selected').text();
-                                		  var hasGuests = ['Abrar Samad','Addie Cox','Adrienne Buckley'];
+                                		  var hasGuests = ['Barnett, Dick & Canice','Begusch, John','Bell, Don & Diane','Bohler, Craig & Kathleen','Bryson, Chase & Jamie','Bryson, Doug & Kaye','Cordle, Laura','Cox, Addie','Crowley, Nick','Dagilis, Amy','Davis, Megan','Diegelmann, Julie & Stephen','Dolan, Griffin & Natalie Santos','Fesmire, Lisa','Forrester, Lynne & Rick','Foster, Pam & Ed','Greenwald, Sam & David Goldstein','Gruneisen, Jim & Sue','Hopkins, Greg','Krol, Marty','Lauer, Robin & Curt','Leep , Katie & Adam','Lehman, Dave & Julie','Linnen, Anneliese & Tyler Stiles','Stoeva, Maggie & Geoff Maines','Meadows, Heather & Zack','Metzler, Ron & Judy','Mills, Rick & Terri','Modzelewski, Meg and Jeff Meek','Nelson, Rob & Megan Svoboda','Niese, Laura','Nilsen, Shayla & Jeff','Gibbons, Debbie','Parente, Nicole','Kotapish, Taylor & Matt','Phillips, Maryanne & Mark','Pickett, Elliot & Caleigh','Pickett, Ricky & Sarah','Pickett, Tom & Penny','Powers, Brad & Jeanette','Powers, Jimmy & Sandy','Qualls Mitchell, Dr. Paula','Radigan, Heidi & Ray','Reffner, Erin & Jarod','Reilly, Lori','Robbins, Raven','Salyer, Lori & Randy','Samad, Abrar & Romaya Ahmed','Segulin, Fran & Wayne','Stanley, Jeanette & Ron','Stanley, Kirk','Taggert, Angel & Joe','Thornburg, Matt & Maria Fortunato','Timan, Kathy & Allen','Trifiro, Ida & Umberto','Trifiro, Luci & Mike','Weiss, Gillian & Adam','Xu, Ginger','Zupke, Bobby'];
                                 		  // console.log(hasGuests.includes(selected))
                                 		  if (hasGuests.includes(selected)) {
                                 		  	document.getElementById("guestSelectors").style.display = "block";
@@ -79,154 +80,125 @@
                                 		  }
                                 		}
                                 	</script>
-                                	<label>Your Name</label>
+                                	<label>Your Name Is:</label>
 	                                <!-- <input type="email" class="form-control" placeholder="you@yourmail.com" id="email" name="_replyto" required data-validation-required-message="Please select your name from the list."> -->
 	                                <select id = "guestName" onChange ="hideSelectors()" class = "custom-select" required>
-	                                	<option value = 'Abrar Samad'>Abrar Samad</option>
-	                                	<option value = 'Addie Cox'>Addie Cox</option>
-	                                	<option value = 'Adrienne Buckley'>Adrienne Buckley</option>
-	                                	<option value = 'Ainsley Townsend'>Ainsley Townsend</option>
-	                                	<option value = 'Alex Reed'>Alex Reed</option>
-	                                	<option value = 'Allen Timan'>Allen Timan</option>
-	                                	<option value = 'Amy Dagilis'>Amy Dagilis</option>
-	                                	<option value = 'Andrew Poyar'>Andrew Poyar</option>
-	                                	<option value = 'Angel Taggert'>Angel Taggert</option>
-	                                	<option value = 'Anneliese Linnen'>Anneliese Linnen</option>
-	                                	<option value = 'Bethany Reckner'>Bethany Reckner</option>
-	                                	<option value = 'Bobby Zupke'>Bobby Zupke</option>
-	                                	<option value = 'Brad Powers'>Brad Powers</option>
-	                                	<option value = 'Bryan Cooper'>Bryan Cooper</option>
-	                                	<option value = 'Caleigh Pickett'>Caleigh Pickett</option>
-	                                	<option value = 'Canice Barnett'>Canice Barnett</option>
-	                                	<option value = 'Catie Lehman'>Catie Lehman</option>
-	                                	<option value = 'Chase Bryson'>Chase Bryson</option>
-	                                	<option value = 'Cheryl Rosario'>Cheryl Rosario</option>
-	                                	<option value = 'Cory Reckner'>Cory Reckner</option>
-	                                	<option value = 'Craig Bohler'>Craig Bohler</option>
-	                                	<option value = 'Curt Lauer'>Curt Lauer</option>
-	                                	<option value = 'Dave Lehman'>Dave Lehman</option>
-	                                	<option value = 'Dave Schneider'>Dave Schneider</option>
-	                                	<option value = 'David Wildasinn'>David Wildasinn</option>
-	                                	<option value = 'Debbie Gibbons'>Debbie Gibbons</option>
-	                                	<option value = 'Diane Bell'>Diane Bell</option>
-	                                	<option value = 'Dick Barnett'>Dick Barnett</option>
-	                                	<option value = 'Don Bell'>Don Bell</option>
-	                                	<option value = 'Doug Bryson'>Doug Bryson</option>
-	                                	<option value = 'Dr. Paula Qualls Mitchell'>Dr. Paula Qualls Mitchell</option>
-	                                	<option value = 'Ed Foster'>Ed Foster</option>
-	                                	<option value = 'Elliot Pickett'>Elliot Pickett</option>
-	                                	<option value = 'Erin Reffner'>Erin Reffner</option>
-	                                	<option value = 'Fran Segulin'>Fran Segulin</option>
-	                                	<option value = 'Gabby Trifiro'>Gabby Trifiro</option>
-	                                	<option value = 'Garren Bohler'>Garren Bohler</option>
-	                                	<option value = 'Geoff Maines'>Geoff Maines</option>
-	                                	<option value = 'Gillian Weiss'>Gillian Weiss</option>
-	                                	<option value = 'Ginger Xu'>Ginger Xu</option>
-	                                	<option value = 'Greg Hopkins'>Greg Hopkins</option>
-	                                	<option value = 'Griffin Dolan'>Griffin Dolan</option>
-	                                	<option value = 'Heather Meadows'>Heather Meadows</option>
-	                                	<option value = 'Heidi Radigan'>Heidi Radigan</option>
-	                                	<option value = 'Ida Trifiro'>Ida Trifiro</option>
-	                                	<option value = 'Jack Herrera'>Jack Herrera</option>
-	                                	<option value = 'Jack Stevning'>Jack Stevning</option>
-	                                	<option value = 'Jamie Bryson'>Jamie Bryson</option>
-	                                	<option value = 'Jeanette Powers'>Jeanette Powers</option>
-	                                	<option value = 'Jeanette Stanley'>Jeanette Stanley</option>
-	                                	<option value = 'Jim Gruneisen'>Jim Gruneisen</option>
-	                                	<option value = 'Jim Parsons'>Jim Parsons</option>
-	                                	<option value = 'Jimmy Powers'>Jimmy Powers</option>
-	                                	<option value = 'Joe Doll'>Joe Doll</option>
-	                                	<option value = 'Joey Crawford'>Joey Crawford</option>
-	                                	<option value = 'John Begusch'>John Begusch</option>
-	                                	<option value = 'Joseph Hrobat'>Joseph Hrobat</option>
-	                                	<option value = 'Judy Metzler'>Judy Metzler</option>
-	                                	<option value = 'Julie Diegelmann'>Julie Diegelmann</option>
-	                                	<option value = 'Julie Lehman'>Julie Lehman</option>
-	                                	<option value = 'Kathleen Bohler'>Kathleen Bohler</option>
-	                                	<option value = 'Kathy Timan'>Kathy Timan</option>
-	                                	<option value = 'Katie Leep '>Katie Leep </option>
-	                                	<option value = 'Kaye Bryson'>Kaye Bryson</option>
-	                                	<option value = 'Kirk Stanley'>Kirk Stanley</option>
-	                                	<option value = 'Laura Cordle'>Laura Cordle</option>
-	                                	<option value = 'Laura Niese'>Laura Niese</option>
-	                                	<option value = 'Lisa Fesmire'>Lisa Fesmire</option>
-	                                	<option value = 'Lori Reilly'>Lori Reilly</option>
-	                                	<option value = 'Lori Salyer'>Lori Salyer</option>
-	                                	<option value = 'Luci Trifiro'>Luci Trifiro</option>
-	                                	<option value = 'Lynne Forrester'>Lynne Forrester</option>
-	                                	<option value = 'Maggie Stoeva'>Maggie Stoeva</option>
-	                                	<option value = 'Marcus Townsend'>Marcus Townsend</option>
-	                                	<option value = 'Marian Bohler'>Marian Bohler</option>
-	                                	<option value = 'Marty Krol'>Marty Krol</option>
-	                                	<option value = 'Maryanne Phillips'>Maryanne Phillips</option>
-	                                	<option value = 'Matt Thornburg'>Matt Thornburg</option>
-	                                	<option value = 'Meg Modzelewski'>Meg Modzelewski</option>
-	                                	<option value = 'Megan Davis'>Megan Davis</option>
-	                                	<option value = 'Megan Svoboda '>Megan Svoboda </option>
-	                                	<option value = 'Mike Trifiro'>Mike Trifiro</option>
-	                                	<option value = 'Nick Crowley'>Nick Crowley</option>
-	                                	<option value = 'Nicky Espinosa'>Nicky Espinosa</option>
-	                                	<option value = 'Nicole Parente'>Nicole Parente</option>
-	                                	<option value = 'Pam Foster'>Pam Foster</option>
-	                                	<option value = 'Penny Pickett'>Penny Pickett</option>
-	                                	<option value = 'Peter Glover'>Peter Glover</option>
-	                                	<option value = 'Peter Larkin-Gero'>Peter Larkin-Gero</option>
-	                                	<option value = 'Randy Bohler'>Randy Bohler</option>
-	                                	<option value = 'Randy Salyer'>Randy Salyer</option>
-	                                	<option value = 'Raven Robbins'>Raven Robbins</option>
-	                                	<option value = 'Ray Radigan'>Ray Radigan</option>
-	                                	<option value = 'Rick Forrester'>Rick Forrester</option>
-	                                	<option value = 'Rick Mills'>Rick Mills</option>
-	                                	<option value = 'Ricky Pickett'>Ricky Pickett</option>
-	                                	<option value = 'Rob Nelson'>Rob Nelson</option>
-	                                	<option value = 'Ron Metzler'>Ron Metzler</option>
-	                                	<option value = 'Ron Stanley'>Ron Stanley</option>
-	                                	<option value = 'Sam Greenwald'>Sam Greenwald</option>
-	                                	<option value = 'Sandy Powers'>Sandy Powers</option>
-	                                	<option value = 'Sarah Braun'>Sarah Braun</option>
-	                                	<option value = 'Sarah Pickett'>Sarah Pickett</option>
-	                                	<option value = 'Scott Burgess'>Scott Burgess</option>
-	                                	<option value = 'Shayla Nilsen'>Shayla Nilsen</option>
-	                                	<option value = 'Stacey Salyer'>Stacey Salyer</option>
-	                                	<option value = 'Steph Botshon'>Steph Botshon</option>
-	                                	<option value = 'Stephanie Barnett'>Stephanie Barnett</option>
-	                                	<option value = 'Steven Farmer'>Steven Farmer</option>
-	                                	<option value = 'Sue Gruneisen'>Sue Gruneisen</option>
-	                                	<option value = 'Taylor Perry- Kotapish'>Taylor Perry- Kotapish</option>
-	                                	<option value = 'Terri Mills'>Terri Mills</option>
-	                                	<option value = 'Tom Pickett'>Tom Pickett</option>
-	                                	<option value = 'Tommy Lehman'>Tommy Lehman</option>
-	                                	<option value = 'Tyler Cunnington'>Tyler Cunnington</option>
-	                                	<option value = 'Tyler Pickett'>Tyler Pickett</option>
-	                                	<option value = 'Tyler Ranft'>Tyler Ranft</option>
-	                                	<option value = 'Umberto Trifiro'>Umberto Trifiro</option>
-	                                	<option value = 'Victor Trifiro'>Victor Trifiro</option>
-	                                	<option value = 'Wayne Segulin'>Wayne Segulin</option>
+	                                	<option value = 'Barnett, Stephanie'>Barnett, Stephanie</option>
+	                                	<option value = 'Barnett, Dick & Canice'>Barnett, Dick & Canice</option>
+	                                	<option value = 'Begusch, John'>Begusch, John</option>
+	                                	<option value = 'Bell, Don & Diane'>Bell, Don & Diane</option>
+	                                	<option value = 'Bohler, Craig & Kathleen'>Bohler, Craig & Kathleen</option>
+	                                	<option value = 'Bohler, Marian'>Bohler, Marian</option>
+	                                	<option value = 'Bohler, Randy'>Bohler, Randy</option>
+	                                	<option value = 'Botshon, Stephanie'>Botshon, Stephanie</option>
+	                                	<option value = 'Braun, Sarah'>Braun, Sarah</option>
+	                                	<option value = 'Bryson, Chase & Jamie'>Bryson, Chase & Jamie</option>
+	                                	<option value = 'Bryson, Doug & Kaye'>Bryson, Doug & Kaye</option>
+	                                	<option value = 'Buckley, Adrienne'>Buckley, Adrienne</option>
+	                                	<option value = 'Burgess, Scott'>Burgess, Scott</option>
+	                                	<option value = 'Cooper, Bryan'>Cooper, Bryan</option>
+	                                	<option value = 'Cordle, Laura'>Cordle, Laura</option>
+	                                	<option value = 'Cox, Addie'>Cox, Addie</option>
+	                                	<option value = 'Crawford, Joey'>Crawford, Joey</option>
+	                                	<option value = 'Crowley, Nick'>Crowley, Nick</option>
+	                                	<option value = 'Cunnington, Tyler'>Cunnington, Tyler</option>
+	                                	<option value = 'Dagilis, Amy'>Dagilis, Amy</option>
+	                                	<option value = 'Davis, Megan'>Davis, Megan</option>
+	                                	<option value = 'Diegelmann, Julie & Stephen'>Diegelmann, Julie & Stephen</option>
+	                                	<option value = 'Dolan, Griffin & Natalie Santos'>Dolan, Griffin & Natalie Santos</option>
+	                                	<option value = 'Doll, Joe'>Doll, Joe</option>
+	                                	<option value = 'Espinosa, Nicky'>Espinosa, Nicky</option>
+	                                	<option value = 'Farmer, Steven'>Farmer, Steven</option>
+	                                	<option value = 'Fesmire, Lisa'>Fesmire, Lisa</option>
+	                                	<option value = 'Forrester, Lynne & Rick'>Forrester, Lynne & Rick</option>
+	                                	<option value = 'Foster, Pam & Ed'>Foster, Pam & Ed</option>
+	                                	<option value = 'Glover, Peter'>Glover, Peter</option>
+	                                	<option value = 'Greenwald, Sam & David Goldstein'>Greenwald, Sam & David Goldstein</option>
+	                                	<option value = 'Gruneisen, Jim & Sue'>Gruneisen, Jim & Sue</option>
+	                                	<option value = 'Herrera, Jack'>Herrera, Jack</option>
+	                                	<option value = 'Hopkins, Greg'>Hopkins, Greg</option>
+	                                	<option value = 'Hrobat, Joseph'>Hrobat, Joseph</option>
+	                                	<option value = 'Krol, Marty'>Krol, Marty</option>
+	                                	<option value = 'Larkin-Gero, Peter'>Larkin-Gero, Peter</option>
+	                                	<option value = 'Lauer, Robin & Curt'>Lauer, Robin & Curt</option>
+	                                	<option value = 'Leep , Katie & Adam'>Leep , Katie & Adam</option>
+	                                	<option value = 'Lehman, Catie'>Lehman, Catie</option>
+	                                	<option value = 'Lehman, Dave & Julie'>Lehman, Dave & Julie</option>
+	                                	<option value = 'Lehman, Tommy'>Lehman, Tommy</option>
+	                                	<option value = 'Linnen, Anneliese & Tyler Stiles'>Linnen, Anneliese & Tyler Stiles</option>
+	                                	<option value = 'Stoeva, Maggie & Geoff Maines'>Stoeva, Maggie & Geoff Maines</option>
+	                                	<option value = 'Meadows, Heather & Zack'>Meadows, Heather & Zack</option>
+	                                	<option value = 'Metzler, Ron & Judy'>Metzler, Ron & Judy</option>
+	                                	<option value = 'Mills, Rick & Terri'>Mills, Rick & Terri</option>
+	                                	<option value = 'Modzelewski, Meg and Jeff Meek'>Modzelewski, Meg and Jeff Meek</option>
+	                                	<option value = 'Nelson, Rob & Megan Svoboda'>Nelson, Rob & Megan Svoboda</option>
+	                                	<option value = 'Niese, Laura'>Niese, Laura</option>
+	                                	<option value = 'Nilsen, Shayla & Jeff'>Nilsen, Shayla & Jeff</option>
+	                                	<option value = 'Gibbons, Debbie'>Gibbons, Debbie</option>
+	                                	<option value = 'Parente, Nicole'>Parente, Nicole</option>
+	                                	<option value = 'Parsons, Jim'>Parsons, Jim</option>
+	                                	<option value = 'Kotapish, Taylor & Matt'>Kotapish, Taylor & Matt</option>
+	                                	<option value = 'Phillips, Maryanne & Mark'>Phillips, Maryanne & Mark</option>
+	                                	<option value = 'Pickett, Elliot & Caleigh'>Pickett, Elliot & Caleigh</option>
+	                                	<option value = 'Pickett, Ricky & Sarah'>Pickett, Ricky & Sarah</option>
+	                                	<option value = 'Pickett, Tom & Penny'>Pickett, Tom & Penny</option>
+	                                	<option value = 'Pickett, Tyler'>Pickett, Tyler</option>
+	                                	<option value = 'Powers, Brad & Jeanette'>Powers, Brad & Jeanette</option>
+	                                	<option value = 'Powers, Jimmy & Sandy'>Powers, Jimmy & Sandy</option>
+	                                	<option value = 'Poyar, Andrew'>Poyar, Andrew</option>
+	                                	<option value = 'Qualls Mitchell, Dr. Paula'>Qualls Mitchell, Dr. Paula</option>
+	                                	<option value = 'Radigan, Heidi & Ray'>Radigan, Heidi & Ray</option>
+	                                	<option value = 'Ranft, Tyler'>Ranft, Tyler</option>
+	                                	<option value = 'Reckner, Bethany & Cory'>Reckner, Bethany & Cory</option>
+	                                	<option value = 'Reed, Alex'>Reed, Alex</option>
+	                                	<option value = 'Reffner, Erin & Jarod'>Reffner, Erin & Jarod</option>
+	                                	<option value = 'Reilly, Lori'>Reilly, Lori</option>
+	                                	<option value = 'Robbins, Raven'>Robbins, Raven</option>
+	                                	<option value = 'Rosario, Cheryl'>Rosario, Cheryl</option>
+	                                	<option value = 'Salyer, Lori & Randy'>Salyer, Lori & Randy</option>
+	                                	<option value = 'Salyer, Stacey'>Salyer, Stacey</option>
+	                                	<option value = 'Samad, Abrar & Romaya Ahmed'>Samad, Abrar & Romaya Ahmed</option>
+	                                	<option value = 'Schneider, Dave'>Schneider, Dave</option>
+	                                	<option value = 'Segulin, Fran & Wayne'>Segulin, Fran & Wayne</option>
+	                                	<option value = 'Stanley, Jeanette & Ron'>Stanley, Jeanette & Ron</option>
+	                                	<option value = 'Stanley, Kirk'>Stanley, Kirk</option>
+	                                	<option value = 'Stevning, Jack'>Stevning, Jack</option>
+	                                	<option value = 'Taggert, Angel & Joe'>Taggert, Angel & Joe</option>
+	                                	<option value = 'Thornburg, Matt & Maria Fortunato'>Thornburg, Matt & Maria Fortunato</option>
+	                                	<option value = 'Timan, Kathy & Allen'>Timan, Kathy & Allen</option>
+	                                	<option value = 'Trifiro, Gabby'>Trifiro, Gabby</option>
+	                                	<option value = 'Trifiro, Ida & Umberto'>Trifiro, Ida & Umberto</option>
+	                                	<option value = 'Trifiro, Luci & Mike'>Trifiro, Luci & Mike</option>
+	                                	<option value = 'Trifiro, Victor'>Trifiro, Victor</option>
+	                                	<option value = 'Weiss, Gillian & Adam'>Weiss, Gillian & Adam</option>
+	                                	<option value = 'Wildasinn, David'>Wildasinn, David</option>
+	                                	<option value = 'Xu, Ginger'>Xu, Ginger</option>
+	                                	<option value = 'Zupke, Bobby'>Zupke, Bobby</option>
 	                                </select>
 	                                <p class="help-block text-danger"></p>
                                 </div>
                                 <div>
-                                	<label>Can you join us?</label>
+                                	<label>You plan to:</label>
                                 		<select id = "rsvp" class = "custom-select">
-                                			<option value = "Yes">Yes, looking forward to it!</option>
-                                			<option value = "No">Sorry, I won't be able to make it!</option>
+                                			<option value = "Yes">Join the party – couldn't miss it</option>
+                                			<option value = "No">Toast from afar – sorry to miss it</option>
                                 		</select>
                                 		<p class="help-block text-danger"></p>
                                 </div>
                                 <div id = "plusOneMessage" style = "display: block;">
-                                	<p><em> Unless otherwise noted, please refrain from inviting a plus one.</em></p>
+                                	<p><em> No plus ones for me – just me and my dancing shoes!</em></p>
                                 </div>
                                 <div id ="guestSelectors" style ="display: none;">
                                 	<div>
-                                		<label>Guests (Plus One)</label>
+                                		<label>You'll be a party of:</label>
                                 		<select id ="plusOne" class = "custom-select">
-                                			<option value = '0'>0</option>
                                 			<option value = '1'>1</option>
+                                			<option value = '2'>2</option>
                                 		</select>
                                 		<p class="help-block text-danger"></p>
                                 	</div>
                                 	<div>
-                                		<label>Children</label>
+                                		<label>And you'll have this many kids in tow:</label>
                                 		<select id = "kidsCount" class = "custom-select">
                                 			<option value = '0'>0</option>
                                 			<option value = '1'>1</option>
@@ -263,7 +235,7 @@
 
                             		}
                             	</script>
-                                <button type="submit" class="btn btn-primary btn-xl" value="Send" onClick = "concatFields()">Send</button>
+                                <button type="submit" class="btn btn-primary btn-xl" value="Send" onClick = "concatFields()">RSVP</button>
                             </div>
                         </div>
                 </form>
