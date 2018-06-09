@@ -69,7 +69,7 @@
                                 		//Show/Hide Inputs Dynamically based on guest
                                 		function hideSelectors() {
                                 		  var selected = $('#guestName option:selected').text();
-                                		  var hasGuests = ['Barnett, Dick & Canice','Begusch, John','Bell, Don & Diane','Bohler, Craig & Kathleen','Bryson, Chase & Jamie','Bryson, Doug & Kaye','Cordle, Laura','Cox, Addie','Crowley, Nick','Dagilis, Amy','Davis, Megan','Diegelmann, Julie & Stephen','Dolan, Griffin & Natalie Santos','Fesmire, Lisa','Forrester, Lynne & Rick','Foster, Pam & Ed','Greenwald, Sam & David Goldstein','Gruneisen, Jim & Sue','Hopkins, Greg','Krol, Marty','Lauer, Robin & Curt','Leep , Katie & Adam','Lehman, Dave & Julie','Linnen, Anneliese & Tyler Stiles','Stoeva, Maggie & Geoff Maines','Meadows, Heather & Zack','Metzler, Ron & Judy','Mills, Rick & Terri','Modzelewski, Meg and Jeff Meek','Nelson, Rob & Megan Svoboda','Niese, Laura','Nilsen, Shayla & Jeff','Gibbons, Debbie','Parente, Nicole','Kotapish, Taylor & Matt','Phillips, Maryanne & Mark','Pickett, Elliot & Caleigh','Pickett, Ricky & Sarah','Pickett, Tom & Penny','Powers, Brad & Jeanette','Powers, Jimmy & Sandy','Qualls Mitchell, Dr. Paula','Radigan, Heidi & Ray','Reffner, Erin & Jarod','Reilly, Lori','Robbins, Raven','Salyer, Lori & Randy','Samad, Abrar & Romaya Ahmed','Segulin, Fran & Wayne','Stanley, Jeanette & Ron','Stanley, Kirk','Taggert, Angel & Joe','Thornburg, Matt & Maria Fortunato','Timan, Kathy & Allen','Trifiro, Ida & Umberto','Trifiro, Luci & Mike','Weiss, Gillian & Adam','Xu, Ginger','Zupke, Bobby'];
+                                		  var hasGuests = ['Barnett, Dick & Canice','Begusch, John','Bell, Don & Diane','Bohler, Craig & Kathleen','Bryson, Chase & Jamie','Bryson, Doug & Kaye','Cordle, Laura','Cox, Addie','Crowley, Nick','Dagilis, Amy','Davis, Megan','Diegelmann, Julie & Stephen','Dolan, Griffin','Fesmire, Lisa','Forrester, Lynne & Rick','Foster, Pam & Ed','Greenwald, Sam & David Goldstein','Gruneisen, Jim & Sue','Hopkins, Greg','Krol, Marty','Lauer, Robin & Curt','Leep , Katie & Adam','Lehman, Dave & Julie','Linnen, Anneliese & Tyler Stiles','Stoeva, Maggie & Geoff Maines','Meadows, Heather & Zack','Metzler, Ron & Judy','Mills, Rick & Terri','Modzelewski, Meg and Jeff Meek','Nelson, Rob & Megan Svoboda','Niese, Laura','Nilsen, Shayla & Jeff','Gibbons, Debbie','Parente, Nicole','Kotapish, Taylor & Matt','Phillips, Maryanne & Mark','Pickett, Elliot & Caleigh','Pickett, Ricky & Sarah','Pickett, Tom & Penny','Powers, Brad & Jeanette','Powers, Jimmy & Sandy','Qualls Mitchell, Dr. Paula','Radigan, Heidi & Ray','Reffner, Erin & Jarod','Reilly, Lori','Robbins, Raven','Salyer, Lori & Randy','Samad, Abrar','Segulin, Fran & Wayne','Stanley, Jeanette & Ron','Stanley, Kirk','Taggert, Angel & Joe','Thornburg, Matt & Maria Fortunato','Timan, Kathy & Allen','Trifiro, Ida & Umberto','Trifiro, Luci & Mike','Weiss, Gillian & Adam','Xu, Ginger','Zupke, Bobby'];
                                 		  // console.log(hasGuests.includes(selected))
                                 		  if (hasGuests.includes(selected)) {
                                 		  	document.getElementById("guestSelectors").style.display = "block";
@@ -105,7 +105,7 @@
 	                                	<option value = 'Dagilis, Amy'>Dagilis, Amy</option>
 	                                	<option value = 'Davis, Megan'>Davis, Megan</option>
 	                                	<option value = 'Diegelmann, Julie & Stephen'>Diegelmann, Julie & Stephen</option>
-	                                	<option value = 'Dolan, Griffin & Natalie Santos'>Dolan, Griffin & Natalie Santos</option>
+	                                	<option value = 'Dolan, Griffin'>Dolan, Griffin</option>
 	                                	<option value = 'Doll, Joe'>Doll, Joe</option>
 	                                	<option value = 'Espinosa, Nicky'>Espinosa, Nicky</option>
 	                                	<option value = 'Farmer, Steven'>Farmer, Steven</option>
@@ -135,6 +135,7 @@
 	                                	<option value = 'Niese, Laura'>Niese, Laura</option>
 	                                	<option value = 'Nilsen, Shayla & Jeff'>Nilsen, Shayla & Jeff</option>
 	                                	<option value = 'Gibbons, Debbie'>Gibbons, Debbie</option>
+                                    <option value = 'Palazzo, Mary'>Palazzo, Mary</option>
 	                                	<option value = 'Parente, Nicole'>Parente, Nicole</option>
 	                                	<option value = 'Parsons, Jim'>Parsons, Jim</option>
 	                                	<option value = 'Kotapish, Taylor & Matt'>Kotapish, Taylor & Matt</option>
@@ -157,7 +158,7 @@
 	                                	<option value = 'Rosario, Cheryl'>Rosario, Cheryl</option>
 	                                	<option value = 'Salyer, Lori & Randy'>Salyer, Lori & Randy</option>
 	                                	<option value = 'Salyer, Stacey'>Salyer, Stacey</option>
-	                                	<option value = 'Samad, Abrar & Romaya Ahmed'>Samad, Abrar & Romaya Ahmed</option>
+	                                	<option value = 'Samad, Abrar'>Samad, Abrar</option>
 	                                	<option value = 'Schneider, Dave'>Schneider, Dave</option>
 	                                	<option value = 'Segulin, Fran & Wayne'>Segulin, Fran & Wayne</option>
 	                                	<option value = 'Stanley, Jeanette & Ron'>Stanley, Jeanette & Ron</option>
@@ -225,7 +226,7 @@
                             <div class="form-group col-lg-12 col-md-12 col-xs-12">
                             	<script>
                             		function concatFields() {
-                            			var concatString = "Guest Name: " + $('#guestName option:selected').text() 
+                            			var concatString = "Guest Name: " + $('#guestName option:selected').text()
                             							   + " | RSVP: " + $('#rsvp option:selected').text()
                             							   + " | Plus one: " + $('#plusOne option:selected').text()
                             							   + " | Kids: " + $('#kidsCount option:selected').text()
